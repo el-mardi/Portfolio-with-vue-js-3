@@ -1,0 +1,134 @@
+@import 'animation.css';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height:1.4;
+    letter-spacing: 1.2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+  }
+body::-webkit-scrollbar{
+  width: 0.7rem;
+}
+body::-webkit-scrollbar-track{
+  border: 1px solid hsl(31, 95%, 74%, 0.7);
+  border-radius: 12px;
+}
+body::-webkit-scrollbar-thumb{
+  background: hsl(31, 95%, 74%, 0.7);
+  border-radius: 12px;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background: hsl(31, 95%, 74%);
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar{}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: darkgray;
+    background: rgb(46, 45, 45);
+    /* background: rgba(240, 240, 240, 0.2); */
+  }
+  .container{
+    padding: 5rem 6rem;
+  }
+
+  .container-sm{
+    padding: 2rem 3rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: darkgray;
+  }
+
+  p{
+    font-size: medium;
+  }
+  button{
+    /* color: darkgray; */
+    background: none;
+    border: solid darkgray 1px;
+    cursor: pointer;
+  }
+
+  .btn{
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    border-radius: 2px;
+    font-size: 0.8rem;
+  }
+  .btn-primary{
+    background: hsl(32, 100%, 79%);
+    color: darkgrey;
+    border: solid 1px hsl(32, 100%, 79%);
+  }
+  .btn-primary:hover{
+    background: white;
+    border: solid 1px hsl(32, 100%, 79%);
+  }
+  .btn-submit{
+    border: solid darkgray 1px;
+    color: darkgray;
+    background-color: hsl(32, 100%, 79%);
+    transition: 400ms ease-in-out;
+  }
+  .btn-submit:hover{
+    background-color:hsl(31, 95%, 74%);
+    color: rgb(110, 110, 110);
+    border: solid rgb(110, 110, 110) 1px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.3);
+  }
+  .btn-blog{
+    display: block;
+    text-align:center ;
+    background: none;
+    padding: 0rem 1rem;
+    color: #000;
+    border-bottom: solid darkgray 1px;
+    border-radius: 1rem;
+  }
+  .btn-blog:hover{
+    color: hsl(32, 100%, 50%);
+    border-bottom: solid hsl(32, 100%, 79%) 1px;
+  }
+  input, textarea{
+      display: block;
+      margin: 1rem 0;
+      width: 100%;
+      border-radius: 5px;
+      border: solid rgb(119, 119, 119) 1.5px;
+      text-indent: 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+  }
+  input{
+      height: 2rem;
+  }
+  textarea{
+    min-height: 7rem;
+  }
+  input:focus-visible, textarea:focus-visible{
+      outline-color: hsl(32, 100%, 79%);
+  }
+
+@media screen and (max-width: 600px) {
+    .container{
+        padding: 2.5rem 2rem;
+    }
+    
+    .container-sm{
+        padding: 1rem 1.5rem;
+    }
+    .noscroll{
+      overflow: hidden;
+    }
+}

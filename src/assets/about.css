@@ -1,0 +1,18 @@
+.about{
+    background: white;
+    padding: 5rem 10rem;
+}
+p{
+  margin-top: 1.5rem;
+  letter-spacing: 1.4px;
+  line-height: 1.5;
+}
+.btn{
+  margin: 1.2rem auto;
+}
+
+@media screen and (max-width: 600px) {
+  .about{
+    padding: 2.5rem 2rem;
+  }
+}

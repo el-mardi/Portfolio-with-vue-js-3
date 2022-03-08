@@ -1,0 +1,48 @@
+
+h1, h2, h3{
+    color: #000;
+}
+p{
+    margin: 0.5rem 0rem;
+}
+.content{
+    text-align: left;
+}
+.articles, .title{
+    text-align: center;
+}
+.article{
+    width: 60%;
+    padding: 1.5rem;
+    border: 0.1rem solid;
+    border-radius: 0.5rem;
+    background: white;
+}
+img, video{
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0rem;
+    transition: 500ms ease-in-out;
+}
+img:hover, video:hover{
+    transform: scale(1.01);
+}
+
+@media screen and (max-width: 600px) {
+    .article{
+        width: 95%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .content{
+        text-align: center;
+    }
+    .btn-blog{
+        margin-top: 1rem;
+    }
+    img, video{
+        height: 15rem;
+    }
+
+}
