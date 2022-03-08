@@ -17,7 +17,8 @@
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
   }
   .hero-img{
     transition: transform 550ms;
@@ -47,7 +48,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 6rem;
+    gap: 5rem;
     margin-bottom:2rem ;
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr; */
@@ -136,7 +137,12 @@
     /* grid-template-rows: 1fr 3fr; */
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 263px) {
+  .helping{
+    flex-direction: column;
+  }
+}
+  @media screen and (max-width: 600px) {
     ul{
         flex-direction: column;
     }
@@ -144,12 +150,12 @@
         width: 90%;
     }
     .helping{
-        gap: 0.7rem;
+        gap: 1rem;
         margin-top: 0.6rem;
     }
     .help {
       margin-top: 1rem;
-      gap: 0.7rem;
+      gap: 1.1rem;
     }
     .help::before{
       padding: 0.9rem 0.69rem;
@@ -164,7 +170,13 @@
     }
 }
 
-@media screen and (min-width:601px) and (max-width: 1100px) {
+@media screen and (min-width:340px) and (max-width: 446px) {
+  .helping {
+    gap: 4rem;
+  }
+ }
+
+  @media screen and (min-width:601px) and (max-width: 1100px) {
   ul{
     justify-content: space-evenly;
     gap: 2rem;
